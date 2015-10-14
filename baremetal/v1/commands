@@ -1,0 +1,205 @@
+{
+    "commands": [
+        {
+            "command_error": null,
+            "command_name": "get_clean_steps",
+            "command_params": {
+                "node": {
+                    "chassis_id": null,
+                    "clean_step": {},
+                    "conductor_affinity": 2,
+                    "console_enabled": false,
+                    "created_at": "2015-09-29T20:57:39.000000",
+                    "driver": "ngac_v2",
+                    "driver_info": {
+                    },
+                    "driver_internal_info": {
+                        "agent_last_heartbeat": 1444846821,
+                        "agent_url": "",
+                        "clean_steps": null,
+                        "hardware_manager_version": {
+                            "generic_hardware_manager": "1.0"
+                        },
+                        "is_whole_disk_image": true
+                    },
+                    "extra": {
+                    },
+                    "id": 72,
+                    "inspection_finished_at": null,
+                    "inspection_started_at": null,
+                    "instance_info": {},
+                    "instance_uuid": null,
+                    "last_error": null,
+                    "maintenance": false,
+                    "maintenance_reason": null,
+                    "name": "co-r030-130",
+                    "power_state": "power on",
+                    "properties": {
+                        "capabilities": "class:metal,network_model:flat bond,hardware_cpu_model:Intel(R) Xeon(R) E3-1230 V2 (3.30GHz),hardware_cpu_threads:8,hardware_cpu_count:1,hardware_network_link_speed_mbit:1000,hardware_storage_raid_controller:None,hardware_storage_count:1,hardware_storage_size_gb:1000,hardware_storage_1_size_gb:1000,hardware_storage_1_type:HDD,hardware_storage_1_interface:SATA,hardware_storage_1_model:Hitachi",
+                        "cpu_arch": "x86_64",
+                        "cpu_cores": "4",
+                        "cpu_speed": "3300",
+                        "cpu_type": "E3-1230 V3",
+                        "cpus": 8,
+                        "local_gb": "1000",
+                        "memory_mb": "8192"
+                    },
+                    "provision_state": "cleaning",
+                    "provision_updated_at": "2015-10-14T18:17:55.000000",
+                    "reservation": "and_then",
+                    "target_power_state": null,
+                    "target_provision_state": "available",
+                    "updated_at": "2015-10-14T18:20:21.000000",
+                    "uuid": "a44b59eb-74ce-4cb4-af05-6604ca1047be"
+                },
+                "ports": [
+                    {
+                        "address": "00:25:90:a4:22:ae",
+                        "created_at": "2015-09-29T20:57:39.000000",
+                        "extra": {
+                        },
+                        "id": 144,
+                        "node_id": 72,
+                        "updated_at": "2015-10-14T18:18:11.000000",
+                        "uuid": "c79f5c95-7b13-4eaa-97e4-0c4c4926e46f"
+                    },
+                    {
+                        "address": "00:25:90:a4:22:af",
+                        "created_at": "2015-09-29T20:57:40.000000",
+                        "extra": {
+                        },
+                        "id": 145,
+                        "node_id": 72,
+                        "updated_at": "2015-10-14T18:18:12.000000",
+                        "uuid": "8bb7f8ff-6bb8-4070-b402-0a2e43246147"
+                    }
+                ]
+            },
+            "command_result": {
+                "clean_steps": {
+                    "GenericHardwareManager": [
+                        {
+                            "interface": "deploy",
+                            "priority": 10,
+                            "reboot_requested": false,
+                            "step": "erase_devices"
+                        }
+                    ]
+                },
+                "hardware_manager_version": {
+                    "generic_hardware_manager": "1.0"
+                }
+            },
+            "command_status": "SUCCEEDED",
+            "id": "0459f502-811c-45fc-92e1-b640eb80bd19"
+        },
+        {
+            "command_error": null,
+            "command_name": "execute_clean_step",
+            "command_params": {
+                "clean_version": {
+                    "generic_hardware_manager": "1.0"
+                },
+                "node": {
+                    "chassis_id": null,
+                    "clean_step": {
+                        "interface": "deploy",
+                        "priority": 10,
+                        "reboot_requested": false,
+                        "step": "erase_devices"
+                    },
+                    "conductor_affinity": 2,
+                    "console_enabled": false,
+                    "created_at": "2015-09-29T20:57:39.000000",
+                    "driver": "ngac_v2",
+                    "driver_info": {
+                    },
+                    "driver_internal_info": {
+                        "agent_last_heartbeat": 1444846821,
+                        "agent_url": "",
+                        "clean_steps": [
+                            {
+                                "interface": "deploy",
+                                "priority": 10,
+                                "reboot_requested": false,
+                                "step": "erase_devices"
+                            }
+                        ],
+                        "hardware_manager_version": {
+                            "generic_hardware_manager": "1.0"
+                        },
+                        "is_whole_disk_image": true
+                    },
+                    "extra": {
+                        "vif_port_ids": "[\"30fb7677-a3d3-476a-846c-d28dc3b3447c\", \"4ea8bc0d-2848-4dd3-b547-4919d49374a4\", \"e1dfb53f-279a-4718-90ab-fa808e49769c\"]"
+                    },
+                    "id": 72,
+                    "inspection_finished_at": null,
+                    "inspection_started_at": null,
+                    "instance_info": {},
+                    "instance_uuid": null,
+                    "last_error": null,
+                    "maintenance": false,
+                    "maintenance_reason": null,
+                    "name": "co-r030-130",
+                    "power_state": "power on",
+                    "properties": {
+                        "capabilities": "class:metal,network_model:flat bond,hardware_cpu_model:Intel(R) Xeon(R) E3-1230 V2 (3.30GHz),hardware_cpu_threads:8,hardware_cpu_count:1,hardware_network_link_speed_mbit:1000,hardware_storage_raid_controller:None,hardware_storage_count:1,hardware_storage_size_gb:1000,hardware_storage_1_size_gb:1000,hardware_storage_1_type:HDD,hardware_storage_1_interface:SATA,hardware_storage_1_model:Hitachi",
+                        "cpu_arch": "x86_64",
+                        "cpu_cores": "4",
+                        "cpu_speed": "3300",
+                        "cpu_type": "E3-1230 V3",
+                        "cpus": 8,
+                        "local_gb": "1000",
+                        "memory_mb": "8192"
+                    },
+                    "provision_state": "cleaning",
+                    "provision_updated_at": "2015-10-14T18:17:55.000000",
+                    "reservation": "and_then",
+                    "target_power_state": null,
+                    "target_provision_state": "available",
+                    "updated_at": "2015-10-14T18:20:21.000000",
+                    "uuid": "a44b59eb-74ce-4cb4-af05-6604ca1047be"
+                },
+                "ports": [
+                    {
+                        "address": "00:25:90:a4:22:ae",
+                        "created_at": "2015-09-29T20:57:39.000000",
+                        "extra": {
+                        },
+                        "id": 144,
+                        "node_id": 72,
+                        "updated_at": "2015-10-14T18:18:11.000000",
+                        "uuid": "c79f5c95-7b13-4eaa-97e4-0c4c4926e46f"
+                    },
+                    {
+                        "address": "00:25:90:a4:22:af",
+                        "created_at": "2015-09-29T20:57:40.000000",
+                        "extra": {
+                        },
+                        "id": 145,
+                        "node_id": 72,
+                        "updated_at": "2015-10-14T18:18:12.000000",
+                        "uuid": "8bb7f8ff-6bb8-4070-b402-0a2e43246147"
+                    }
+                ],
+                "step": {
+                    "interface": "deploy",
+                    "priority": 10,
+                    "reboot_requested": false,
+                    "step": "erase_devices"
+                }
+            },
+            "command_result": {
+                "clean_step": {
+                    "priority": 10,
+                    "interface": "deploy",
+                    "step": "erase_devices",
+                    "reboot_requested": false
+                }
+            },
+            "command_status": "SUCCEEDED",
+            "id": "5e4dda92-2fdc-4049-8a01-e8e46cea547e"
+        }
+    ]
+}
