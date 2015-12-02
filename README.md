@@ -7,7 +7,8 @@ Usage
 -----
 
 ```
-curl -v -X POST -H 'Content-Type: application/json' -d '{"agent_url": "https://raw.githubusercontent.com/mat128/ipa_cleaning_success/master/baremetal"}' http://ironic_host:6385/v1/nodes/NODE_UUID/vendor_passthru/heartbeat
+curl -v -X POST -H 'Content-Type: application/json' -d '{"agent_url": "https://raw.githubusercontent.com/mat128/ipa_cleaning_success/master/baremetal_success"}' http://ironic_host:6385/v1/nodes/NODE_UUID/vendor_passthru/heartbeat
+curl -v -X POST -H 'Content-Type: application/json' -d '{"agent_url": "https://raw.githubusercontent.com/mat128/ipa_cleaning_success/master/baremetal_failure"}' http://ironic_host:6385/v1/nodes/NODE_UUID/vendor_passthru/heartbeat
 ```
 
 You should be receiving a ```202 Accepted``` answer and the node should transition to ```AVAILABLE```.
